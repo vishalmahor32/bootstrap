@@ -13,6 +13,7 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
     <style>
         .logo {
             height: 10pxx;
@@ -32,25 +33,73 @@
         and safely from the comfort of your own home. One-on-one, real-time, private, and secure. Also offering in-home
         COVID-19 recovery program. <a href="#" class="text-info">Learn more</a>
     </div>
-    <nav class="navbar bg-info bg-opacity-50">
+    <nav class="navbar bg-info bg-opacity-25">
         <div class="container-fluid">
             <i class="fa-solid fa-list fs-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
                 aria-controls="offcanvasWithBothOptions" style="position:absolute; left:15px"></i>
             <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
                 aria-labelledby="offcanvasWithBothOptionsLabel">
                 <div class="position-relative">
-                    <button type="button " class="btn-close" style=" position:absolute; left:95%"
-                        data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <!-- <button type="button " class="btn-close" style=" position:absolute; left:95%"
+                        data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+                    <i class="fa-solid fa-arrow-up-right-from-square close text-dark fs-3"
+                        style=" position:absolute; left:95%" data-bs-dismiss="offcanvas" aria-label="Close"></i>
                 </div>
                 <div class="offcanvas-header ">
                     <div class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-                        <ul class="fs-2 vstack gap-3">
-                            <li class="bg-light border "><a href="#">Profile</a></li>
-                            <li class="bg-light border "><a href="#">Appointment</a></li>
-                            <li class="bg-light border "><a href="#">Content</a></li>
-                            <li class="bg-light border "><a href="#">About Us </a></li>
-                            <li class="bg-light border "><a href="#">log-in/Sign-in</a></li>
-                        </ul>
+                        <div class="dropdown fs-3">
+                            <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
+                                id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="https://github.com/mdo.png" alt="" width="32" height="32"
+                                    class="rounded-circle me-2">
+                                <strong>User</strong>
+                            </a>
+                            <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+                                <li><a class="dropdown-item" href="#">New project...</a></li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Sign out</a></li>
+                            </ul>
+                        </div>
+                        <div class="d-flex flex-column flex-shrink-0 p-3 bg-white fs-4"
+                            style="width: 380px; height:600px">
+                            <hr>
+                            <ul class="nav nav-pills flex-column mb-auto">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link active  link-light" aria-current="page">
+                                        <i class="fa-solid fa-house-user"></i>
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link link-dark">
+                                        <i class="fa-solid fa-book-medical"></i>
+                                        Appointment
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link link-dark">
+                                        <i class="fa-solid fa-address-card"></i>
+                                        About Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link link-dark">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Location
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link link-dark">
+                                        <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                                        Login
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -84,6 +133,67 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
+    </div>
+    <br>
+    <div class="container-fluid bg-info bg-opacity-25 fs-4">
+        <footer class="py-5">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h5>Subscribe to our newsletter</h5>
+                        <p>Monthly digest of what's new and exciting from us.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>© 2022 Company, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a href="#"><i class="fa-brands fa-facebook fs-3"></i></a></li>
+                    <li class="ms-3"><a href="#"><i class="fa-brands fa-insagram fs-3"></i></a></li>
+                    <li class="ms-3"><a href="#"><i class="fa-brands fa-linkedin fs-3"></i></a></li>
+                    <li class="ms-3"><a href="#"><i class="fa-brands fa-youtube fs-3"></i></a></li>
+                </ul>
+            </div>
+        </footer>
     </div>
 </body>
 
