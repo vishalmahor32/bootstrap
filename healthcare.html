@@ -25,9 +25,19 @@
             width: 100%;
         }
     </style>
+    <script>
+        function darkMode() {
+            document.body.style.backgroundColor="black";
+            document.getElementById("body").style.color="white";
+            document.getElementById("navbar").style.backgroundColor="white";
+            document.getElementById("navbar").style.color="white";
+
+
+        }
+    </script>
 </head>
 
-<body>
+<body id="body">
     <div class="alert alert-danger text-center" style="height: auto; font-size:15px" role="alert">
         COVID Notice: TeleTherapy services available. You can connect with one of our skilled therapists conveniently
         and safely from the comfort of your own home. One-on-one, real-time, private, and secure. Also offering in-home
@@ -37,7 +47,7 @@
         <div class="container-fluid">
             <i class="fa-solid fa-list fs-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
                 aria-controls="offcanvasWithBothOptions" style="position:absolute; left:15px"></i>
-            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions navbar"
                 aria-labelledby="offcanvasWithBothOptionsLabel">
                 <div class="position-relative">
                     <!-- <button type="button " class="btn-close" style=" position:absolute; left:95%"
@@ -45,7 +55,7 @@
                     <i class="fa-solid fa-arrow-up-right-from-square close text-dark fs-3"
                         style=" position:absolute; left:95%" data-bs-dismiss="offcanvas" aria-label="Close"></i>
                 </div>
-                <div class="offcanvas-header ">
+                <div class="offcanvas-header " >
                     <div class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
                         <div class="dropdown fs-3">
                             <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
@@ -54,15 +64,17 @@
                                     class="rounded-circle me-2">
                                 <strong>User</strong>
                             </a>
+                           
                             <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
-                                <li><a class="dropdown-item" href="#">New project...</a></li>
-                                <li><a class="dropdown-item" href="#">Settings</a></li>
                                 <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li><a class="dropdown-item" href="#">Help</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
                                 <li><a class="dropdown-item" href="#">Sign out</a></li>
                             </ul>
+                            
                         </div>
                         <div class="d-flex flex-column flex-shrink-0 p-3 bg-white fs-4"
                             style="width: 380px; height:600px">
@@ -81,13 +93,19 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="nav-link link-dark">
+                                    <a href="/about.html" class="nav-link link-dark">
                                         <i class="fa-solid fa-address-card"></i>
                                         About Us
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="nav-link link-dark">
+                                    <div class="text-black" onclick="darkMode()">
+                                    <i class="fa-solid fa-moon" style="margin-left: 13px;" ></i>
+                                    Dark Mode
+                                </div>
+                                </li>
+                                <li>
+                                    <a href="https://www.google.com/maps/@23.0926305,72.5323024,15z" class="nav-link link-dark">
                                         <i class="fa-solid fa-location-dot"></i>
                                         Location
                                     </a>
@@ -103,7 +121,9 @@
                     </div>
                 </div>
             </div>
-            <a class="navbar-brand fs-1 text-white">Health Care</a>
+            <div class="container">
+                <span class="navbar-brand mb-0 h1 fs-1 text-white" style="margin-left: 20px;">Health Care</span>
+              </div>
             <form class="d-flex" role="search" style="position:absolute; right:15px;">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-secondary" type="submit">Search</button>
@@ -120,22 +140,24 @@
           <div class="carousel-item active">
             <img src="https://media.istockphoto.com/photos/businessman-hold-virtual-medical-network-connection-icons-covid19-picture-id1312765142?b=1&k=20&m=1312765142&s=170667a&w=0&h=ma8qI_qiKbpNXLqKbQN1HKmSr1hfEn2dw6XyCB-nsSA=" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
+              <h2>TREATMENT With You Every Step of the Way</h2>
+              <h4>SWherever you are in your journey, we will be your partners, counselors and trusted medical team from day one. Our 6-week residential treatment program gives you the tools, the time and the support you need to achieve long-term recovery</h4>
+              <a href="/Appointment.html"><button type="button" class="btn btn-success">Appointment</button></a>
+              <br>
             </div>
           </div>
           <div class="carousel-item">
             <img src="https://images.unsplash.com/photo-1615486511262-c7b5c7f42b14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aGVhbHRoJTIwbW9uaXRvcnxlbnwwfHwwfHw%3D&w=1000&q=80" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
+            <div class="carousel-caption d-none d-md-block text-black">
+                <h2>TREATMENT With You Every Step of the Way</h2>
+                <h4>SWherever you are in your journey, we will be your partners, counselors and trusted medical team from day one. Our 6-week residential treatment program gives you the tools, the time and the support you need to achieve long-term recovery</h4>
             </div>
           </div>
           <div class="carousel-item">
             <img src="https://media.istockphoto.com/photos/cropped-image-of-nurse-holding-green-book-on-white-background-picture-id953280216?b=1&k=20&m=953280216&s=170667a&w=0&h=LjBjE7Z94yoI_RrnSckRgAQGZHXvl1hbcOFwXKnKddo=" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
+                <h2>TREATMENT With You Every Step of the Way</h2>
+              <h4>SWherever you are in your journey, we will be your partners, counselors and trusted medical team from day one. Our 6-week residential treatment program gives you the tools, the time and the support you need to achieve long-term recovery</h4>
             </div>
           </div>
         </div>
