@@ -13,17 +13,128 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        *{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .greenbackground {
+            background-color:rgb(4, 84, 4);
+        }
+        .logoimage{
+            height:150px;
+            width:150px;
+            
+        }
+        .logohelp{
+            
+            color:white;
+            font-size:20px;
+            
+        }
+
+        .navigationbar {
+            height: auto;
+            width: 100%;
+        }
+        </style>
 </head>
 
-<body class=" bg-secondary bg-opacity-10">
+<body class=" bg-secondary bg-opacity-25">
+    <div class="contaienr-fluid greenbackground" >
+        <div class="text-center">
+            <img src="/images/pngwing.com.png" class="logoimage"alt="">
+            <div class="logohelp">
+               We're Hear For You, Your Life
+               <div style="font-size:25px;">
+                Loren Health Care
+               </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar text-white" style="background-color: rgb(4, 84, 4);">
+        <div class="container-fluid">
+            <i class="fa-solid fa-list fs-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+                aria-controls="offcanvasWithBothOptions" style="position:absolute; left:15px"></i>
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+                aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="position-relative">
+                    <i class="fa-solid fa-arrow-up-right-from-square close text-dark fs-3"
+                        style=" position:absolute; left:95%" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+                </div>
+                <div class="offcanvas-header ">
+                    <div class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                        <div class="dropdown fs-3">
+                            <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
+                                id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="https://github.com/mdo.png" alt="" width="32" height="32"
+                                    class="rounded-circle me-2">
+                                <strong>User</strong>
+                            </a>
+                            <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">help</a></li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Sign out</a></li>
+                            </ul>
+                        </div>
+                        <div class="d-flex flex-column flex-shrink-0 p-3 bg-white fs-4"
+                            style="width: 380px; height:600px">
+                            <hr>
+                            <ul class="nav nav-pills flex-column mb-auto">
+                                <li>
+                                    <a href="/about.html" class="nav-link link-dark">
+                                        <i class="fa-solid fa-house-user"></i>
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/Appointment.html" class="nav-link link-dark">
+                                        <i class="fa-solid fa-book-medical"></i>
+                                        Appointment
+                                    </a>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link active  link-light " style="background-color: rgb(4, 84, 4)" aria-current="page">
+                                        <i class="fa-solid fa-address-card"></i>
+                                        About Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.google.com/maps" class="nav-link link-dark">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Location
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/login.html" class="nav-link link-dark">
+                                        <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                                        Login
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="navbar-brand fs-1 text-white">Health Care</a>
+            <form class="d-flex" role="search" style="position:absolute; right:15px;">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-secondary" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
     <div class="container marketing  ">
         <!-- START THE FEATURETTES -->
         <hr class="featurette-divider">
         <div class="row featurette bg-secondary bg-opacity-50">
             <div class="col-md-7 my-5">
-                <h2 class="featurette-heading fw-normal lh-1 fs-1">TREATMENT
+                <h1 class="featurette-heading fw-normal lh-1 fs-1">TREATMENT
 
-                    With You Every Step of the Way </h2>
+                    With You Every Step of the Way </h1>
                 <p class="lead" style="font-size:20px;">Wherever you are in your journey, we will be your partners,
                     counselors and trusted medical team from day one. Our 6-week residential treatment program gives you
                     the tools, the time and the support you need to achieve long-term recovery.</p>
@@ -37,8 +148,8 @@
         </div>
         <hr class="featurette-divider">
 
-        <div class="row featurette bg-success bg-opacity-50">
-            <div class="col-md-7 order-md-2 my-5">
+        <div class="row featurette bg-opacity-50" style="background-color:rgb(4,84,4);">
+            <div class="col-md-7 order-md-2 my-5 text-white">
                 <h2 class="featurette-heading fw-normal lh-1 fs-1">Why Choose Our Company? </h2>
                 <p class="lead">
                 <ul style="font-size:20px;">
@@ -75,6 +186,63 @@
         </div>
         <hr class="featurette-divider">
     </div>
+    <div class="container-fluid bg-secondary bg-opacity-50 fs-2 text-black">
+        <footer class="py-5">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="/healthcare.html" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <img src="/images/pngwing.com.png" class="logoimage"  alt="logo">
+                    <div>
+                       Loren Treatment & Outpatient Services
+241 loren Place
+Mill Spring, NC 28756
+828-694-2300
+
+                    </div>
+
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <img src="https://www.pavillon.org/wp-content/themes/pavilion/dist/images/just-economics.png" style="height:80px; width:80px;" alt="certification">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img src="https://www.pavillon.org/wp-content/uploads/2022/04/26th-anniversary.png" style="height:80px; width:80px;" alt="certification">
+                </div>
+
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h5>Subscribe to our newsletter</h5>
+                        <p>Monthly digest of what's new and exciting from us.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                            <button class="btn btn-success" type="button" style="background-color: rgb(4,84,4);">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top border-success">
+                <p>© 2022 Company, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex" >
+                    <li class="ms-3"><i class="fa-brands fa-facebook fs-1" style="color: rgb(4, 84, 4);"><a href="https://www.facebook.com/"></i></a></li>
+                    <li class="ms-3"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fs-1" style="color: rgb(4, 84, 4);"></i></a></li>
+                    <li class="ms-3"><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin fs-1 " style="color: rgb(4, 84, 4);"></i></a></li>
+                    <li class="ms-3"><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube fs-1 " style="color: rgb(4, 84, 4);"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
 </body>
+
 
 </html>

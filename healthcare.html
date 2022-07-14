@@ -15,9 +15,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
     <style>
-        .logo {
-            height: 10pxx;
-            width: 10px;
+        *{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .greenbackground {
+            background-color:rgb(4, 84, 4);
+        }
+        .logoimage{
+            height:150px;
+            width:150px;
+        }
+        .logohelp{
+            
+            color:white;
+            font-size:20px;
+   
         }
 
         .navigationbar {
@@ -25,37 +37,33 @@
             width: 100%;
         }
     </style>
-    <script>
-        function darkMode() {
-            document.body.style.backgroundColor="black";
-            document.getElementById("body").style.color="white";
-            document.getElementById("navbar").style.backgroundColor="white";
-            document.getElementById("navbar").style.color="white";
-
-
-        }
-    </script>
 </head>
-
-<body id="body">
+<body>
     <div class="alert alert-danger text-center" style="height: auto; font-size:15px" role="alert">
         COVID Notice: TeleTherapy services available. You can connect with one of our skilled therapists conveniently
         and safely from the comfort of your own home. One-on-one, real-time, private, and secure. Also offering in-home
         COVID-19 recovery program. <a href="#" class="text-info">Learn more</a>
     </div>
-    <nav class="navbar bg-success text-white">
+    <div class="contaienr-fluid greenbackground" >
+        <div class="text-center">
+            <img src="/images/pngwing.com.png" class="logoimage"alt="">
+            <div class="logohelp">
+               We're Hear For You, Your Life <br>
+               <div style="font-size:25px;">Loren Health Care</div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar text-white" style="background-color: rgb(4, 84, 4);">
         <div class="container-fluid">
             <i class="fa-solid fa-list fs-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
                 aria-controls="offcanvasWithBothOptions" style="position:absolute; left:15px"></i>
-            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions navbar"
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
                 aria-labelledby="offcanvasWithBothOptionsLabel">
                 <div class="position-relative">
-                    <!-- <button type="button " class="btn-close" style=" position:absolute; left:95%"
-                        data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
                     <i class="fa-solid fa-arrow-up-right-from-square close text-dark fs-3"
                         style=" position:absolute; left:95%" data-bs-dismiss="offcanvas" aria-label="Close"></i>
                 </div>
-                <div class="offcanvas-header " >
+                <div class="offcanvas-header ">
                     <div class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
                         <div class="dropdown fs-3">
                             <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
@@ -64,24 +72,22 @@
                                     class="rounded-circle me-2">
                                 <strong>User</strong>
                             </a>
-                           
                             <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
-                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">New project...</a></li>
                                 <li><a class="dropdown-item" href="#">Settings</a></li>
-                                <li><a class="dropdown-item" href="#">Help</a></li>
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
                                 <li><a class="dropdown-item" href="#">Sign out</a></li>
                             </ul>
-                            
                         </div>
                         <div class="d-flex flex-column flex-shrink-0 p-3 bg-white fs-4"
                             style="width: 380px; height:600px">
                             <hr>
                             <ul class="nav nav-pills flex-column mb-auto">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link active  link-light bg-success" aria-current="page">
+                                    <a href="#" class="nav-link active  link-light " style="background-color: rgb(4, 84, 4)" aria-current="page">
                                         <i class="fa-solid fa-house-user"></i>
                                         Home
                                     </a>
@@ -99,13 +105,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <div class="text-black" onclick="darkMode()">
-                                    <i class="fa-solid fa-moon" style="margin-left: 13px;" ></i>
-                                    Dark Mode
-                                </div>
-                                </li>
-                                <li>
-                                    <a href="https://www.google.com/maps/@23.0926305,72.5323024,15z" class="nav-link link-dark">
+                                    <a href="https://www.google.com/maps" class="nav-link link-dark">
                                         <i class="fa-solid fa-location-dot"></i>
                                         Location
                                     </a>
@@ -121,11 +121,8 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <span class="navbar-brand mb-0 h1 fs-1 text-white" style="margin-left: 20px;">Health Care</span>
-              </div>
             <form class="d-flex" role="search" style="position:absolute; right:15px;">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <input class="form-control me-2 w-100" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-secondary" type="submit">Search</button>
             </form>
         </div>
@@ -138,26 +135,28 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="https://media.istockphoto.com/photos/businessman-hold-virtual-medical-network-connection-icons-covid19-picture-id1312765142?b=1&k=20&m=1312765142&s=170667a&w=0&h=ma8qI_qiKbpNXLqKbQN1HKmSr1hfEn2dw6XyCB-nsSA=" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h2>TREATMENT With You Every Step of the Way</h2>
-              <h4>SWherever you are in your journey, we will be your partners, counselors and trusted medical team from day one. Our 6-week residential treatment program gives you the tools, the time and the support you need to achieve long-term recovery</h4>
-              <a href="/Appointment.html"><button type="button" class="btn btn-success">Appointment</button></a>
-              <br>
+            <img src="https://media.istockphoto.com/photos/businessman-hold-virtual-medical-network-connection-icons-covid19-picture-id1312765142?b=1&k=20&m=1312765142&s=170667a&w=0&h=ma8qI_qiKbpNXLqKbQN1HKmSr1hfEn2dw6XyCB-nsSA=" class="d-block w-100" alt="slide1">
+            <div class="carousel-caption d-none d-md-block bg-primary bg-opacity-25">
+              <h2 class="fs-1">Special Treatment</h2>
+              <p class="fs-2">We will take care of you or your loved one struggling with drugs or alcohol while also giving you the freedom required to live your everyday life again. </p>
+              <button type="button" class="btn btn-success fs-4" href="/Appointment.html" style="background-color: rgb(4,84,4);">Take Appointment</button>
             </div>
+          
           </div>
           <div class="carousel-item">
             <img src="https://images.unsplash.com/photo-1615486511262-c7b5c7f42b14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aGVhbHRoJTIwbW9uaXRvcnxlbnwwfHwwfHw%3D&w=1000&q=80" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block text-black">
-                <h2>TREATMENT With You Every Step of the Way</h2>
-                <h4>SWherever you are in your journey, we will be your partners, counselors and trusted medical team from day one. Our 6-week residential treatment program gives you the tools, the time and the support you need to achieve long-term recovery</h4>
+            <div class="carousel-caption d-none d-md-block text-black bg-secondary bg-opacity-25">
+              <h1 class="fs-1">Why 6 Weeks is Key to Lasting Recovery.</h1>
+              <p class="fs-2">Our 6-week program provides the perfect amount of time to not only detox the body but also begin cognitive clearing. During this time, the body learns how to live without substances. Only then can the healing begin..</p>
+                <button type="button" class="btn btn-outline-success fs-4" href="#" >Learn More</button>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="https://media.istockphoto.com/photos/cropped-image-of-nurse-holding-green-book-on-white-background-picture-id953280216?b=1&k=20&m=953280216&s=170667a&w=0&h=LjBjE7Z94yoI_RrnSckRgAQGZHXvl1hbcOFwXKnKddo=" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-                <h2>TREATMENT With You Every Step of the Way</h2>
-              <h4>SWherever you are in your journey, we will be your partners, counselors and trusted medical team from day one. Our 6-week residential treatment program gives you the tools, the time and the support you need to achieve long-term recovery</h4>
+            <img src="https://media.istockphoto.com/photos/cropped-image-of-nurse-holding-green-book-on-white-background-picture-id953280216?b=1&k=20&m=953280216&s=170667a&w=0&h=LjBjE7Z94yoI_RrnSckRgAQGZHXvl1hbcOFwXKnKddo=" class="d-block w-100" alt="slide3">
+            <div class="carousel-caption d-none d-md-block bg-primary bg-opacity-25">
+              <h1 class="fs-1">Best Doctor</h1>
+              <p class="fs-2">Book an appointment with the best Doctors & Surgeons in your area. Find out the list of Top Doctors nearby you.</p>
+              <button type="button" class="btn btn-success fs-3">Find out</button>
             </div>
           </div>
         </div>
@@ -171,8 +170,8 @@
         </button>
       </div>
     <div class="container-fluid text-white fs-2 ">
-    <div class="row">
-        <div class="col-lg-4 bg-success">
+    <div class="row" >
+        <div class="col-lg-4 " style="background-color: rgb(4, 84, 4);">
             <br>
             <img class="bd-placeholder-img rounded-circle" src="https://www.pavillon.org/wp-content/uploads/2021/08/section-4-new.jpg"  width="140" height="140" alt="">
           <h1 class="fw-normal">Treatment May be Covered by Insurance.</h1><br>
@@ -185,16 +184,16 @@
   
           <h1 class="fw-normal">You or Your Loved One Will be Safe and Sober.</h1><br>
           <p>From the moment of arrival, you or your family member will be treated with dignity and respect. We provide an initial medical exam upon arrival, and a safe, medically supervised detox if necessary. The actual program doesn’t begin until after the body has properly detoxed from the substances.</p>
-          <p><a class="btn btn-success fs-3" href="#">View details »</a></p>
+          <p><a class="btn btn-success fs-3" href="#" style="background-color: rgb(4, 84, 4);">View details »</a></p>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4 bg-success">
+        <div class="col-lg-4 " style="background-color: rgb(4, 84, 4);">
             <br>
             <img class="bd-placeholder-img rounded-circle" src="https://www.pavillon.org/wp-content/uploads/2021/07/shutterstock_1323591665@2x.jpg"  width="140" height="140" alt="">
   
           <h1 class="fw-normal">The Family Will be Supported
             and Informed.</h1> <br>
           <p>The person suffering from addiction isn’t the only one who needs support. We know that families are often hopeless and out of resources to help their loved one. But that’s where we come in. For lasting recovery, family relationships and dynamics must also be healed. You, as the family, will be given the tools and information you need for a newfound hope and direction</p>
-          <p><a class="btn btn-secondary fs-3" href="#">View details »</a></p>
+          <p><a class="btn btn-secondary fs-3" href="#" >View details »</a></p>
         </div><!-- /.col-lg-4 -->
       </div>
     </div>
@@ -208,30 +207,26 @@
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-6 col-md-2 mb-3">
-                    <h5>Section</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="/healthcare.html" class="nav-link p-0 text-muted">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
                         <li class="nav-item mb-2"><a href="/about.html" class="nav-link p-0 text-muted">About</a></li>
                     </ul>
                 </div>
 
                 <div class="col-6 col-md-2 mb-3">
-                    <h5>Section</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="/healthcare.html" class="nav-link p-0 text-muted">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="/about.html" class="nav-link p-0 text-muted">About</a></li>
-                    </ul>
+                    <img src="/images/pngwing.com.png" class="logoimage"  alt="logo">
+                    <div>
+                       Loren Treatment & Outpatient Services
+241 loren Place
+Mill Spring, NC 28756
+828-694-2300
+
+                    </div>
+
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <img src="https://www.pavillon.org/wp-content/themes/pavilion/dist/images/just-economics.png" style="height:80px; width:80px;" alt="certification">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img src="https://www.pavillon.org/wp-content/uploads/2022/04/26th-anniversary.png" style="height:80px; width:80px;" alt="certification">
                 </div>
 
                 <div class="col-md-5 offset-md-1 mb-3">
@@ -241,18 +236,18 @@
                         <div class="d-flex flex-column flex-sm-row w-100 gap-2">
                             <label for="newsletter1" class="visually-hidden">Email address</label>
                             <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                            <button class="btn btn-success" type="button">Subscribe</button>
+                            <button class="btn btn-success" type="button" style="background-color: rgb(4,84,4);">Subscribe</button>
                         </div>
                     </form>
                 </div>
             </div>
             <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top border-success">
                 <p>© 2022 Company, Inc. All rights reserved.</p>
-                <ul class="list-unstyled d-flex text-success">
-                    <li class="ms-3"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fs-1 text-success"></i></a></li>
-                    <li class="ms-3"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fs-1 text-success"></i></a></li>
-                    <li class="ms-3"><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin fs-1 text-success"></i></a></li>
-                    <li class="ms-3"><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube fs-1 text-success"></i></a></li>
+                <ul class="list-unstyled d-flex" >
+                    <li class="ms-3"><i class="fa-brands fa-facebook fs-1" style="color: rgb(4, 84, 4);"><a href="https://www.facebook.com/"></i></a></li>
+                    <li class="ms-3"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fs-1" style="color: rgb(4, 84, 4);"></i></a></li>
+                    <li class="ms-3"><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin fs-1 " style="color: rgb(4, 84, 4);"></i></a></li>
+                    <li class="ms-3"><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube fs-1 " style="color: rgb(4, 84, 4);"></i></a></li>
                 </ul>
             </div>
         </footer>
